@@ -66,12 +66,12 @@ namespace Leap.Unity {
     public override void UpdateHand() {
       if (palm != null) {
         if (ModelPalmAtLeapWrist) {
-         // palm.position = GetWristPosition();
+         //palm.position = GetWristPosition();
         }
         else {
-          //palm.position = GetPalmPosition();
+          palm.position = GetPalmPosition();
           if (wristJoint) {
-        //    wristJoint.position = GetWristPosition();
+           wristJoint.position = GetWristPosition();
           }
         }
         palm.rotation = GetRiggedPalmRotation() * Reorientation();
