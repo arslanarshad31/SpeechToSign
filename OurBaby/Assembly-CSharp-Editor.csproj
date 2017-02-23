@@ -61,19 +61,151 @@
      <Compile Include="Assets\LeapMotion\Scripts\VR\Editor\EyeTypeEditor.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\VR\Editor\LeapTemporalWarpingEditor.cs" />
      <Compile Include="Assets\LeapMotionModules\Hands\Scripts\Editor\LeapHandsAutoRigEditor.cs" />
-     <Compile Include="Assets\Unity-Runtime-Animation-Recorder\Unity Runtime Recorder\Scripts\UnityAnimSaver\Editor\UnityAnimationRecorderEditor.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMCodeView.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMEasePicker.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMOptions.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMOptionsFile.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMPropertySelect.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMSettings.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMTakeExport.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMTakeImport.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMTimeline.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\AMTransitionPicker.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\ObjInspect\AMTakeEditor.cs" />
+     <Compile Include="Assets\Skele\AnimatorSP\Files\Editor\ObjInspect\AnimatorDataEditor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\AssetPostProcessor\FindBonePP.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Constraints\LimbConstraints.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Cutscene\CCEditor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Cutscene\Editor\CC_GUI_Editor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Cutscene\Editor\CC_JumpTo_Editor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Cutscene\PropertyDrawers\CCTimeTagDrawer.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Cutscene\PropertyDrawers\CCTrPathDrawer.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\DaeExporter\DaeExporter.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\DaeExporter\DaeExporterEditor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\GUIWindows\MirrorSettingWindow.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\IKSolvers\LimbSolver.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\IKSolvers\TestCCD.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\MirrorCtrl.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\AnimCompressEditorWindow.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\AnimCurvePropEditor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\AnimMirrorEditorWindow.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\AnimationBaker.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\AnimatorDebugger.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\MeshPivotFixerEditorWindow.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\MirrorNameRegex.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\MuscleClipConverterEditor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\ShareSkeleEditor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\Misc\ShowBindPose.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\PoseSet.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\SMREditor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\SelectionCtrl.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Editor\VersionCheck.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Scripts\IKSolvers\Editor\AngleConstraintEditor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Scripts\IKSolvers\Editor\CCDSolverEditor.cs" />
+     <Compile Include="Assets\Skele\CharacterAnimationTools\Scripts\IKSolvers\Editor\ConeConstraintEditor.cs" />
+     <Compile Include="Assets\Skele\Common\Attributes\Editor\CommonAttributeProcessorEditor.cs" />
+     <Compile Include="Assets\Skele\Common\Attributes\Editor\TagNLayer.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EData\EDOBool.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EData\EDOFloat.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EData\EDOInt.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EData\EDOString.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EData\EData.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EData\EDataInspector.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EData\EDataObj.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\ETimeProf.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EUtil.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EditorEditorWindow.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\EmptyMarkerEditor.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\GUIWindowMgr.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\ParticleMarker.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\PreferenceItem.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\UndoCont.cs" />
+     <Compile Include="Assets\Skele\Common\Editor\ViewRotate.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\BaseConstraintEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\BipedConstraintSetupWindow.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\ChildOfEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\ClampToEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\ConstraintManagerEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\ConstraintStackEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\ConstraintsWindow.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\CopyPositionEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\CopyRotationEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\CopyScaleEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\CopyTransformEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\EConUtil.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\FloorEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\FollowPathEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\LimitDistanceEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\LimitLocationEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\LimitRotationEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\LimitScaleEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\LockedTrackEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\LookAtEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\MaintainVolumeEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\ShrinkWrapEditor.cs" />
+     <Compile Include="Assets\Skele\Constraints\Editor\TransformMappingEditor.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\EditorCursor.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\MeshManipulator.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\MeshMarker.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\MeshSelection.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\MeshUndoer.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\MeshUtil\EdgeMarker.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\MeshUtil\MeshCache.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\MeshUtil\TriMarker.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\MeshUtil\VertMarker.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\Operations\DeformOp\MoveVerts.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\Operations\DeformOp\RotateVerts.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\Operations\DeformOp\ScaleVerts.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\Operations\EdgeLoopSelectOp.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\Operations\FixBoundNormalOp.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\Operations\OpUtil.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\Operations\RecalcNormalOp.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\OverlapChecker.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\Pivotor.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\ShortcutListWindow.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\SoftSelection\SoftSelection.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\SoftSelection\SoftSelectionRes.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\UndoMesh.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\VMesh\VEdge.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\VMesh\VFace.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\VMesh\VMesh.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\VMesh\VMeshUtil.cs" />
+     <Compile Include="Assets\Skele\MeshEditor\Editor\VMesh\VVert.cs" />
+     <Compile Include="Assets\Skele\Spline\Editor\CatmullRomCentripetalBehaviourEditor.cs" />
+     <Compile Include="Assets\Skele\Spline\Editor\CatmullRomUniformBehaviourEditor.cs" />
+     <Compile Include="Assets\Skele\Spline\Editor\ISplineEditor.cs" />
+     <Compile Include="Assets\Skele\VertAnimation\Editor\BaseMorphSOEditor.cs" />
+     <Compile Include="Assets\Skele\VertAnimation\Editor\EditorRes.cs" />
+     <Compile Include="Assets\Skele\VertAnimation\Editor\MorphProcEditor.cs" />
+     <Compile Include="Assets\Skele\VertAnimation\Editor\ShapeKeyMorphSOEditor.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
+     <None Include="Assets\Skele\MeshEditor\Editor\MeshUtil\EdgeMat.shader" />
+     <None Include="Assets\Skele\_ExampleScenes\Res\Extra\Robot Kyle\Toony-Basic.shader" />
+     <None Include="Assets\Skele\AnimatorSP\changelog.txt" />
      <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
      <None Include="Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
      <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\LeapMotion\Resources\RuntimeGizmos.shader" />
+     <None Include="Assets\Skele\MeshEditor\Editor\Res\TransDouble.shader" />
      <None Include="Assets\LeapMotion\Dependencies.txt" />
+     <None Include="Assets\Skele\_ExampleScenes\Res\Extra\Robot Kyle\Toony-BasicOutline.shader" />
      <None Include="Assets\LeapMotion\Resources\ThresholdOverlay.shader" />
+     <None Include="Assets\Skele\AnimatorSP\Files\Resources\AMIrisShapeNew.shader" />
      <None Include="Assets\LeapMotion\Resources\PassthroughForeground.shader" />
+     <None Include="Assets\Skele\_ExampleScenes\Res\Extra\InvColor.shader" />
      <None Include="Assets\LeapMotion\Resources\PassthroughBackground.shader" />
+     <None Include="Assets\Skele\README_CAT.txt" />
+     <None Include="Assets\Skele\ReleaseNotes_CAT.txt" />
+     <None Include="Assets\Skele\MeshEditor\Editor\Res\RenderDepth.shader" />
+     <None Include="Assets\Skele\CharacterAnimationTools\Scripts\Collada_Main\COPYING.txt" />
+     <None Include="Assets\Skele\CharacterAnimationTools\Res\TheBoneManipulator\passthrough.shader" />
      <None Include="Assets\LeapMotion\Version.txt" />
+     <None Include="Assets\Skele\CharacterAnimationTools\Res\TheBoneManipulator\NormalVertMarker.shader" />
+     <None Include="Assets\Skele\AnimatorSP\Examples\Assets\Audios\Sound.txt" />
      <None Include="Assets\LeapMotion\Resources\VertexOffsetShader.shader" />
+     <None Include="Assets\Skele\MeshEditor\Editor\MeshUtil\VertBillboard.shader" />
+     <None Include="Assets\Skele\Common\Res\DrawUtil\DrawUtilLine.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -99,13 +231,19 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>C:/Users/Arslan/Documents/OurBaby/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>C:/Users/Arslan/Desktop/SpeechToSign/OurBaby/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>C:/Users/Arslan/Desktop/SpeechToSign/OurBaby/Assets/Skele/AnimatorSP/Files/Scripts/JsonFx.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="FullSerializer - Unity">
+ <HintPath>C:/Users/Arslan/Desktop/SpeechToSign/OurBaby/Assets/Skele/Common/FullSerializer/FullSerializer - Unity.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
