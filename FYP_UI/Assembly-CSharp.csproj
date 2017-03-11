@@ -47,42 +47,6 @@
   <ItemGroup>
      <Compile Include="Assets\MainController.cs" />
      <Compile Include="Assets\SavWav.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\AudioFileSavingComponent.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\GoogleSpeechToTextResponseJSONParser.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\NonStreamingSpeechToTextService.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\SpeechToTextResults\GoogleTextAlternative.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\SpeechToTextResults\SpeechToTextResult.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\SpeechToTextResults\TextAlternative.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\SpeechToTextResults\WindowsTextAlternative.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\SpeechToTextService.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\StreamingSpeechToTextService.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\WindowsSpeechToTextService.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextServices\WitAiSpeechToTextResponseJSONParser.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextWidgets\SpeechToTextComparisonWidget.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\SpeechToTextWidgets\SpeechToTextServiceWidget.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\AudioRecordingManager.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\DebugFlag.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\Globals.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\IOUtilities.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\LogFileManager.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\MonoSingleton.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\SavWav.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\SmartLogger.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\StringUtilities.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\ThreadedJobs\SoXAudioConversionJob.cs" />
-     <Compile Include="Assets\SpeechToText\Scripts\Utilities\ThreadedJobs\ThreadedJob.cs" />
-     <Compile Include="Assets\SpeechToText\ThirdParty\JSON\JSONObject.cs" />
-     <Compile Include="Assets\SpeechToText\ThirdParty\JSON\JSONTemplates.cs" />
-     <Compile Include="Assets\SpeechToText\ThirdParty\JSON\VectorTemplates.cs" />
-     <None Include="Assets\StreamingAssets\GoogleStreamingSpeechToTextProgram\Grpc.Core.xml" />
-     <None Include="Assets\StreamingAssets\GoogleStreamingSpeechToTextProgram\Newtonsoft.Json.xml" />
-     <None Include="Assets\SpeechToText\ThirdParty\JSON\readme.txt" />
-     <None Include="Assets\StreamingAssets\GoogleStreamingSpeechToTextProgram\Google.Apis.Core.xml" />
-     <None Include="Assets\StreamingAssets\GoogleStreamingSpeechToTextProgram\Google.Apis.Auth.PlatformServices.xml" />
-     <None Include="Assets\StreamingAssets\GoogleStreamingSpeechToTextProgram\System.Interactive.Async.xml" />
-     <None Include="Assets\StreamingAssets\GoogleStreamingSpeechToTextProgram\Google.Apis.Auth.xml" />
-     <None Include="Assets\StreamingAssets\GoogleStreamingSpeechToTextProgram\Google.Protobuf.xml" />
-     <None Include="Assets\StreamingAssets\GoogleStreamingSpeechToTextProgram\Grpc.Auth.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
