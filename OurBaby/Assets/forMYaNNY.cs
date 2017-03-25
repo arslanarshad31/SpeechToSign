@@ -3,6 +3,7 @@ using System.Collections;
 
 public class forMYaNNY : MonoBehaviour {
 	static Animator anim;
+	string translatedString = null;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -10,9 +11,8 @@ public class forMYaNNY : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		 if (Input.GetButtonDown("Jump"))
-		 {
-			 anim.SetTrigger("idle");
-		 }
+		// translatedString = MainController.getString();
+		// Debug.Log(translatedString);
 	}
+
 }

@@ -123,6 +123,8 @@
      <Compile Include="Assets\LeapMotionModules\Hands\Scripts\PolyHand.cs" />
      <Compile Include="Assets\LeapMotionModules\Hands\Scripts\RiggedFinger.cs" />
      <Compile Include="Assets\LeapMotionModules\Hands\Scripts\RiggedHand.cs" />
+     <Compile Include="Assets\MainController.cs" />
+     <Compile Include="Assets\SavWav.cs" />
      <Compile Include="Assets\Script\Kinect\KinectImgControllers\DisplayColor.cs" />
      <Compile Include="Assets\Script\Kinect\KinectImgControllers\DisplayDepth.cs" />
      <Compile Include="Assets\Script\Kinect\KinectModelControllers\KinectModelControllerV2.cs" />
