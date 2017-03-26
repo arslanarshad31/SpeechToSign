@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{81379C9F-0B72-D683-2874-7B615B08371A}") = "FYP_Playback", "Assembly-CSharp.csproj", "{6235DAC3-E941-66E7-5FCF-362CA753111D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6235DAC3-E941-66E7-5FCF-362CA753111D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6235DAC3-E941-66E7-5FCF-362CA753111D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6235DAC3-E941-66E7-5FCF-362CA753111D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6235DAC3-E941-66E7-5FCF-362CA753111D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

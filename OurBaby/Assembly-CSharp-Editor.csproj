@@ -178,7 +178,6 @@
      <Compile Include="Assets\Skele\VertAnimation\Editor\EditorRes.cs" />
      <Compile Include="Assets\Skele\VertAnimation\Editor\MorphProcEditor.cs" />
      <Compile Include="Assets\Skele\VertAnimation\Editor\ShapeKeyMorphSOEditor.cs" />
-     <Compile Include="Assets\Unity-Runtime-Animation-Recorder\Unity Runtime Recorder\Scripts\UnityAnimSaver\Editor\UnityAnimationRecorderEditor.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Skele\MeshEditor\Editor\MeshUtil\EdgeMat.shader" />
      <None Include="Assets\Skele\_ExampleScenes\Res\Extra\Robot Kyle\Toony-Basic.shader" />
