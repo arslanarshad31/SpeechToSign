@@ -628,6 +628,10 @@
      <Compile Include="Assets\Skele\VertAnimation\ShapeKeys\ShapeKeyData.cs" />
      <Compile Include="Assets\Skele\VertAnimation\ShapeKeys\ShapeKeyDataDiff.cs" />
      <Compile Include="Assets\Skele\VertAnimation\ShapeKeys\ShapeKeyMorphSO.cs" />
+     <Compile Include="Assets\Unity-Runtime-Animation-Recorder\Unity Runtime Recorder\Scripts\AnimationRecorderHelper.cs" />
+     <Compile Include="Assets\Unity-Runtime-Animation-Recorder\Unity Runtime Recorder\Scripts\UnityAnimSaver\UnityAnimationRecorder.cs" />
+     <Compile Include="Assets\Unity-Runtime-Animation-Recorder\Unity Runtime Recorder\Scripts\UnityAnimSaver\UnityCurveContainer.cs" />
+     <Compile Include="Assets\Unity-Runtime-Animation-Recorder\Unity Runtime Recorder\Scripts\UnityAnimSaver\UnityObjectAnimation.cs" />
      <Compile Include="Assets\forMYaNNY.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Skele\MeshEditor\Editor\MeshUtil\EdgeMat.shader" />
