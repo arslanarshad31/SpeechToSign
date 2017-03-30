@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{81379C9F-0B72-D683-2874-7B615B08371A}") = "FYP_Playback", "Assembly-CSharp.csproj", "{6235DAC3-E941-66E7-5FCF-362CA753111D}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FYP_Playback", "Assembly-CSharp.csproj", "{6235DAC3-E941-66E7-5FCF-362CA753111D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

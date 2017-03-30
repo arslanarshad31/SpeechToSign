@@ -14,16 +14,19 @@ public class MainController : MonoBehaviour {
 		InputField inputText = GameObject.Find("/Canvas/InputText").GetComponent<InputField>();
 		Debug.Log("Input text: " + inputText.text);
 		// Sending HTTP Request
-		StartCoroutine(getTranslate(inputText.text.Replace(' ', '%')));
+		StartCoroutine(getTranslate(inputText.text.Replace(' ', '@')));
 	}
 
 	private IEnumerator getTranslate(String text){
-    	WWW req = new WWW("http://localhost:5000/translate/"+ text);
+		string request = "http://0.0.0.0:8080/translate/"+ text;
+		Debug.Log(request);
+    	WWW req = new WWW(request);
     	yield return req;
 		// HTTP response recieved
 		InputField translateText = GameObject.Find("/Canvas/TranslateText").GetComponent<InputField>();
 		translateText.text = req.text;
-		//anim = this.transform.Find("Aj").gameObject.GetComponent<Animator>();
+		anim = this.transform.Find("Aj").gameObject.GetComponent<Animator>();
+		//anim = GetComponent<Animator>();
 		string[] tokens = req.text.ToLower().Split(' ');
 		StartCoroutine(waitedAnimate(tokens));
 	}
@@ -35,9 +38,8 @@ public class MainController : MonoBehaviour {
 				|| tokens[i].Equals("q") || tokens[i].Equals("exclamation")) continue;
 			Debug.Log("Setting Trig: " + tokens[i]);
 			displayWord.text = tokens[i];
-			//anim.SetTrigger(tokens[i]);
-			//yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
-			yield return new WaitForSeconds(2.0f);
+			anim.SetTrigger(tokens[i]);
+			yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
 		 }
 	}
 
