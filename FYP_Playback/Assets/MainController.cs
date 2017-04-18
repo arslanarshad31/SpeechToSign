@@ -29,7 +29,7 @@ public class MainController : MonoBehaviour {
 		anim = this.transform.Find("Aj").gameObject.GetComponent<Animator>();
 		//anim = GetComponent<Animator>();
 		string[] tokens = req.text.ToLower().Split(' ');
-		string[] vocabulary = {"aj", "hkust","hk","ust", "onur"};
+		string[] vocabulary = {"aj", "hkust","hk","ust", "onur", "akanksha", "arslan", "sheetal", "mak", "nevin", "brian", "professor", "doctor", "zhang"};
 
 		var j = tokens.Length;
 		for (var i=0; i<j;++i){
@@ -43,6 +43,7 @@ public class MainController : MonoBehaviour {
 				i+= letter.Length-1;
 			}
 		}	
+		for (var i=0; i<j;++i){Debug.Log(tokens[i]);}
 		StartCoroutine(waitedAnimate(tokens));
 	}
 	
@@ -51,23 +52,22 @@ public class MainController : MonoBehaviour {
 		string[] vocabulary = {"aj", "hkust","hk","ust", "onur"};
 		
 		Text displayWord = GameObject.Find("/Canvas/DisplayWord").GetComponent<Text>();
-				
-		for (var i=0; i<tokens.Length;++i){
-			if (tokens[i].Equals("neutral") || tokens[i].Equals("question")|| tokens[i].Equals("exclamation")) continue;
-			else if (tokens[i].Equals(".") ||  tokens[i].Equals("q")) {
-				displayWord.text = "<pause>";
-				anim.SetTrigger("idle");
+		var i = 0;
+		for (i=0; i<tokens.Length;++i){
+			if (tokens[i].Equals("neutral") || tokens[i].Equals("question")|| tokens[i].Equals("exclamation")||tokens[i].Equals(".") ||  tokens[i].Equals("q")) {
+				displayWord.text = " ";
 				yield return new WaitForSeconds(2f);
 			}
 			else {
 				displayWord.text = tokens[i];
-				anim.SetTrigger(tokens[i]);
+				anim.SetTrigger(Animator.StringToHash(tokens[i]));
 				yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
 				}
 			}
-		displayWord.text = " ";
-		anim.SetTrigger("idle");
-		yield return new WaitForSeconds(2f);
-
+		if (i == tokens.Length){
+			displayWord.text = " ";
+			anim.SetTrigger(Animator.StringToHash("idle"));
+			yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+		}
 	}
 }	
