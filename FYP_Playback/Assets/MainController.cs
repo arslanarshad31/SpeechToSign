@@ -29,11 +29,16 @@ public class MainController : MonoBehaviour {
 		anim = this.transform.Find("Aj").gameObject.GetComponent<Animator>();
 		//anim = GetComponent<Animator>();
 		string[] tokens = req.text.ToLower().Split(' ');
-		string[] vocabulary = {"aj", "hkust","hk","ust", "onur", "akanksha", "arslan", "sheetal", "mak", "nevin", "brian", "professor", "doctor", "zhang"};
-
+		string[] nouns = {"aj", "hkust","hk","ust", "onur", "akanksha", "arslan", "sheetal", "mak", "nevin", "brian", "professor", "doctor", "zhang"};
+		string vocabulary = "NEUTRAL, QUESTION, EXCLAMATION, YOU, MORE, EAT, MOM, DAD, THANK, HI, WITH, PLAY, MUSIC, MOVIE, LIKE, FOOTBALL, YEAR, OUR, SAY, STUDY, SEE, WHERE, THINK, NEXT, NAME, ME, MY, INDIA, IT, HAVE, COME, THIS, PAST, GO, GOOD, IN, RAIN, RAINY, US, THEY, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN";
+		string[] stringSeparators = new string[] {", "};
+		string[] vocab = vocabulary.ToLower().Split(stringSeparators, StringSplitOptions.RemoveEmptyEntries);
+		
 		var j = tokens.Length;
+
 		for (var i=0; i<j;++i){
-			if (vocabulary.Contains(tokens[i])){
+			Debug.Log(vocab.Contains(tokens[i]));
+			if (nouns.Contains(tokens[i]) || vocab.Contains(tokens[i])==false){
 				string[] letter = tokens[i].ToCharArray().Select( c => c.ToString()).ToArray();
 				List<string> myList = tokens.ToList();
 				myList.RemoveAt(i);
@@ -48,15 +53,15 @@ public class MainController : MonoBehaviour {
 	}
 	
 	IEnumerator waitedAnimate(string[] tokens) {
-
-		string[] vocabulary = {"aj", "hkust","hk","ust", "onur"};
 		
 		Text displayWord = GameObject.Find("/Canvas/DisplayWord").GetComponent<Text>();
 		var i = 0;
 		for (i=0; i<tokens.Length;++i){
 			if (tokens[i].Equals("neutral") || tokens[i].Equals("question")|| tokens[i].Equals("exclamation")||tokens[i].Equals(".") ||  tokens[i].Equals("q")) {
-				displayWord.text = " ";
-				yield return new WaitForSeconds(2f);
+				if (i!=0){
+					displayWord.text = " ";
+					yield return new WaitForSeconds(1f);
+				}
 			}
 			else {
 				displayWord.text = tokens[i];
